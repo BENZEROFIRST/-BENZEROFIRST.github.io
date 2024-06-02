@@ -1,0 +1,141 @@
+body {
+  font-family: 微软雅黑, sans-serif;
+  margin: 0;
+  background: linear-gradient(
+  to right,
+  #C7F0F6 0%,
+  #E0EBFF 30%,
+  #FFD7D9 50%,
+  #F7CAC9 70%,
+  #E6E6FA 100%
+);
+}
+header {
+  text-align: center;
+}
+header  img{
+  width: 75vw;
+
+}
+main {
+  display: flex;
+}
+.news-list {
+  flex: 2;
+}
+.news-item {
+  margin-bottom: 20px;
+}
+.news-item img {
+  width: 22vw;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.news-item h2 {
+  margin: 0;
+}
+.news-item p {
+  margin-top: 5px;
+  line-height: 1.6;
+}
+aside {
+  position: fixed;
+  top:20vh;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color:transparent;
+  padding: 20px;
+}
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar-nav li {
+  margin-bottom: 15px;
+}
+.sidebar-nav a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+.sidebar-nav a:hover {
+  background-color: #eee;
+}
+.sidebar-nav h2 {
+  margin: 0 0 20px;
+  color: #444;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: transparent;
+}
+
+.news-item {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.news-item.active {
+  opacity: 1;
+}
+
+.sidebar-nav li a {
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-nav li a:hover {
+  background-color: #eee;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif; /* Montserrat 是 Google Fonts 提供的一种优雅现代字体 */
+}
+
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  width: 75vw;
+}
+
+
+h1, h2, h3 {
+  font-weight: bold;
+  color: #333;
+}
+
+
+a {
+  margin-left: 15px;
+  color:skyblue;
+  text-decoration: none;
+}
+
+@keyframes font-color-and-size {
+  from {
+    font-size: 1em;
+    color: skyblue;
+  }
+  to {
+    font-size: 1.5em;
+    color: #bdb6ec;
+  }
+}
+
+a:hover {
+  animation: font-color-and-size 0.5s ease forwards;
+}
+
+p {
+  background-color: rgba(233,230,217,0);
+  padding: 20px;
+  border-radius: 5px;
+}
+
